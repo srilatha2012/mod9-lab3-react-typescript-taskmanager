@@ -3,8 +3,8 @@ import type { TaskItemProps, TaskStatus } from "../../types"
 export function TaskItem({ task, onStatusChange, onDelete }: TaskItemProps) {
 
     return (
-        <div>
-            <h2>{task.title}</h2>
+        <div className="border rounded-lg p-4 shadow-sm">
+            <h2 className="font-bold">{task.title}</h2>
             <p>{task.description}</p>
             <p>Status: {task.status}</p>
             <p>Priority: {task.priority}</p>

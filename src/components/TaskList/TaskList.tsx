@@ -4,7 +4,7 @@ import { TaskItem } from "../TaskItem/TaskItem"
 
 export function TaskList({ tasks, onStatusChange, onDelete }: TaskListProps) {
     return (
-        <div>
+        <div className="space-y-4">
             {tasks.map((task) => (
                 <TaskItem
                     key={task.id}
